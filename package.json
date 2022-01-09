@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "server": "node src/server/server.js",
-    "test": "node src/tests/unit_test.test.js",
-    "test:server": "node src/tests/server_http.test.js"
+    "test": "node tests/unit_test.test.js",
+    "test:server": "node tests/server_http.test.js",
+    "mocha": "./node_modules/mocha/bin/mocha tests/"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
 }

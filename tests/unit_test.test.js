@@ -1,6 +1,6 @@
-const assert = require('../core/assert/assert.js');
-const sqr = require('../core/sqr/sqr.js');
-var User = require('../core/user/user.js');
+const assert = require('../src/core/assert/assert.js');
+const sqr = require('../src/core/sqr/sqr.js');
+var User = require('../src/core/user/user.js');
 
 function main(){
     assert('Pessoa' === 'Pessoa', 'Testing string');
