@@ -3,7 +3,7 @@ const http = require('http');
 const { it } = require('mocha');
 
 describe('Integrations Tests', () => {
-    it('Integration test on localhost:3000 === Server On', () => {
+    it('Integration test on localhost:3000 === Server On', async () => {
         http.request('http://localhost:3000', (res) => {
             const chunks = [];
             res.on('data', (chunk) => chunks.push(chunk));
@@ -14,7 +14,7 @@ describe('Integrations Tests', () => {
         }).end();
     });
 
-    it('Integration test on localhost:3000 !== Server On', () => {
+    it('Integration test on localhost:3000 !== Server On', async () => {
         http.request('http://localhost:3000', (res) => {
             const chunks = [];
             res.on('data', (chunk) => chunks.push(chunk));
